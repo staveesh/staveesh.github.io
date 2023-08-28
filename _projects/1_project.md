@@ -1,81 +1,76 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
-importance: 1
-category: work
-related_publications: einstein1956investigations, einstein1950meaning
+title: DenseNet API
+description: A simple Artificial Neural Network API for Supervised Learning using Python.
+img: /assets/img/densenet.png
+importance: 4
+category: School
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Github : [https://github.com/staveesh/DenseNet-API](https://github.com/staveesh/DenseNet-API)
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Collaborators : Taveesh Sharma, Kushagr Arora, Vishal Agrawal
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The API currently supports:
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+##### 1. Activation functions:
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+  * ReLU
+  * Sigmoid
+  * Softmax
+  * Linear
 
+##### 2. Loss functions:
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+  * L1 loss
+  * L2 loss
+  * Cross Entropy
+  * SVM loss
 
+##### 3. Optimisers:
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+  * SGD 
+  * SGD with momentum
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+### Using the API:
+
+```python
+import numpy as np
+from DenseNet import DenseNet
+from Graph_API import Optimiser
+
+opti = Optimiser(learning_rate=0.09, momentum_eta=0.5)
+
+X_train = # Inputs
+Y_train = # One-hot encoded Labels
+net = DenseNet(X_train.shape,opti,'cross entropy') # 'l1' for L1 loss, 'l2' for L2 loss, 'svm' for svm
+
 ```
-{% endraw %}
+
+To add a hidden/output layer, simply call addlayer function with activation function and number of neurons.
+
+ ```python
+net.addlayer(activation='sigmoid',units=4)
+net.addlayer(activation='relu', units=3)
+```
+
+For output layer, add units same as the number of classes
+
+```python
+net.addlayer(activation='softmax',units=y_train.shape[1])
+```
+
+The train function runs SGD for 1 iteration only. Call it for multiple iterations for training.
+
+```python 
+iterations = 10000
+for i in range(iterations):
+  error = net.train(X_train,Y_train)
+```
+
+To make predictions use :
+
+```python
+X_test = #test data
+predictions = net.predict(X_test)
+```

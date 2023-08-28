@@ -1,52 +1,56 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Taveesh Sharma",
+    "label": "PhD Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "taveesh@uchicago.edu",
+    "phone": "",
+    "url": "https://taveeshsharma.com",
+    "summary": "",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "John Crerar Library",
+      "postalCode": "60615",
+      "city": "Chicago",
       "countryCode": "US",
-      "region": "California"
+      "region": "Illinois"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "staveesh",
+        "url": "https://twitter.com/staveesh"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "NOISE Lab, UChicago",
+      "position": "Research Assistant",
+      "url": "https://noise.cs.uchicago.edu",
+      "startDate": "2022-09-27",
+      "endDate": "Present",
+      "summary": "Working on data-driven video-conferencing QoE estimation and internet equity.",
       "highlights": [
-        "Relativity"
+        "QoE", "Internet Measurements", "Broadband Policy"
       ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "University of Chicago",
+      "url": "https://www.cs.uchicago.edu/",
+      "area": "Computer Networking",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "startDate": "2022-09-27",
+      "endDate": "Present",
       "score": "",
       "courses": [
-        "Theory of Relativity"
+        "Machine Learning for Computer Systems",
+        "Networks and Distributed Systems",
+        "Computational Linguistics",
+        "Machine Learning",
+        "Data Visualization"
       ]
     }
   ],
@@ -59,7 +63,7 @@
     }
   ],
   "certificates": [],
-  "publications": [],
+  "publications": ["A", "B", "C", "D"],
   "skills": [],
   "languages": [
     {
