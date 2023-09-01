@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://taveeshsharma.com/sitemap.xml
+Sitemap: https://staveesh.github.io/sitemap.xml
