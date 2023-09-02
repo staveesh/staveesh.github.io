@@ -10,14 +10,13 @@ category: School
 <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/roburse2.jpeg' | relative_url }}" alt="" title="Roburse in action"/>
 
 
-Most of the elderly people in Europe and North America live alone or in an elderly home, thus depending on someone to satisfy their needs. Roburse aims to solve that and provide the relatives/closed ones a closer view into lives of their old folks. Roburse provides P2P video chatting, remote navigation, recording daily schedule/diet/medication. We use a dago thunder rover with Arduino and android phone mounted on it
-which is used in the elderly person's side and an android app on the caretaker side. 
+Most of the elderly people in Europe and North America live alone or in an elderly home, depending on someone to satisfy their needs. Roburse aims to solve that and provide the relatives/closed ones a closer view into lives of their old folks. Roburse provides P2P video chatting, remote navigation, recording daily schedule/diet/medication. We used a Dagu thunder rover with Arduino Uno, a motor driver, a bluetooth module and a phone mounted on top of it. The phone is connected to the Arduino via bluetooth and the caretaker can control the robot via an android application. The robot is also equipped with a camera and a microphone to provide a view of the surroundings to the caretakers. The caretaker can also set alarms for the elderly person and record their daily schedule/diet/medication. The application also provides a videoconferencing interface for the caretaker and the elderly person to communicate with each other. 
 
 **Implementation details**
 
 *Remote navigation*
 
-Navigation commands are sent from the caretaker's phone to firebase's real-time database. The database then delivers it to the phone mounted on the robot. Since the phone is connected via bluetooth to the Arduino, the signals are sent via bluetooth to the arduino board's tx and rx pins. Depending on the type of signal (left, right, forward, backward), the arduino board sends  an appropriate signal to a PWM motor driver, which helps in spinning the wheels of the robot.
+Navigation commands are sent from the caretaker's phone to a Firebase real-time database. The database then delivers it to the phone mounted on the robot. Since the phone is connected via Bluetooth to the Arduino, the signals are sent via bluetooth to the arduino board's Tx and Rx pins. Depending on the type of signal (left, right, forward, backward), the Arduino board sends an appropriate signal to a PWM motor driver, which helps in spinning the wheels of the robot.
 
 *P2P video calling*
 
@@ -25,7 +24,7 @@ To provide a view of the surroundings to the caretakers, the robot is equipped w
 
 **Complete workflow**
 
-The android application starts with a fingerprint authentication activity. Then it opens up a login page for both caretaker and the elderly person. The user can enter his/her phone number in order to make call to the API. Since the API requires both the clients to know each other’s login information and the information has to be unique as well, so we used phone number as the username and client ID for the API. So after both the users log on into the service, an additional bluetooth configuration page opens for the parent after which there’s an option to either set an alarm or place a call for both clients. The application asks for permission to access phone contacts and opens the contact list using which both the users can search for each other’s name and place the call. After the caretaker places a call, the phone rings for 5 seconds and the call is picked automatically on the elder's side. Once the call is established, the caretaker can send the signals via firebase and control the rover.
+The android application starts with a fingerprint authentication activity. Then it opens up a login page for both caretaker and the elderly person. The user can enter his/her phone number in order to make call to the API. We used phone number as the username and client ID for the API for signalling purposes. After both the users log on into the service, an additional Bluetooth configuration page opens for the elderly person after which there’s an option to either set an alarm or place a call for both clients. The application asks for permission to access phone contacts and opens the contact list using which both the users can search for each other’s name and place the call. After the caretaker places a call, the phone rings for 5 seconds and the call is picked automatically on the elder's side. Once the call is established, the caretaker can send the signals via Firebase and control the rover.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-4 mt-3 mt-md-0">

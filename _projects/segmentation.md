@@ -33,4 +33,4 @@ at intervals of two.
 **Experiment setup**
 
 The dataset comprises of 164 images of red blood cells each having dimensions of 128 x 128. The entire code is run using TensorFlow 1.0 and is trained on Tesla GPU, which took around 20 minutes for 5-fold cross validation. We did a 5–fold cross validation on the training set using Scikit Learn.
-We used cross entropy as our loss function. The trained model is tested on the test dataset which comprises of 40 variable sized images of RBCs.
+We used cross entropy as our loss function. The trained model is tested on the test dataset which comprised 40 variable sized images of RBCs.
