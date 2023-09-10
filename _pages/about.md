@@ -6,7 +6,7 @@ subtitle: PhD Student in Computer Science
 
 profile:
   align: right
-  image: profile.png
+  image: prof.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>taveesh@uchicago.edu</p>
