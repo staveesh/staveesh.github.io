@@ -1,11 +1,12 @@
 @misc{2306.01194,
-  abbr     = {IMC Pre-Print},
+  abbr     = {IMC},
   author   = {Taveesh Sharma and Tarun Mangla and Arpit Gupta and Junchen Jiang and Nick Feamster},
   abstract = { The increased use of video conferencing applications (VCAs) has made it critical to understand and support end-user quality of experience (QoE) by all stakeholders in the VCA ecosystem, especially network operators, who typically do not have direct access to client software. Existing VCA QoE estimation methods use passive measurements of application-level Real-time Transport Protocol (RTP) headers. However, a network operator does not always have access to RTP headers in all cases, particularly when VCAs use custom RTP protocols (e.g., Zoom) or due to system constraints (e.g., legacy measurement systems). Given this challenge, this paper considers the use of more standard features in the network traffic, namely, IP and UDP headers, to provide per-second estimates of key VCA QoE metrics such as frames rate and video resolution. We develop a method that uses machine learning with a combination of flow statistics (e.g., throughput) and features derived based on the mechanisms used by the VCAs to fragment video frames into packets. We evaluate our method for three prevalent VCAs running over WebRTC: Google Meet, Microsoft Teams, and Cisco Webex. Our evaluation consists of 54,696 seconds of VCA data collected from both (1), controlled in-lab network conditions, and (2) real-world networks from 15 households. We show that the ML-based approach yields similar accuracy compared to the RTP-based methods, despite using only IP/UDP data. For instance, we can estimate FPS within 2 FPS for up to 83.05\% of one-second intervals in the real-world data, which is only 1.76\% lower than using the application-level RTP headers.},
   title    = {Estimating WebRTC Video QoE Metrics Without Using Application Headers },
   year     = {2023},
   eprint   = {arXiv:2306.01194},
-  pdf      = {2306.01194.pdf},
+  pdf      = {IMC_2023.pdf},
+  code     = {https://github.com/noise-lab/vcaml},
   selected = {true}
 }
 
@@ -29,6 +30,7 @@
                algorithms and present an analysis of trends in their performance with varying experiment
                profiles.},
   pages     = {453–456},
+  poster    = {COMPASS_Slide.pdf},
   pdf       = {3460112.3472310.pdf}
 }
 
@@ -38,6 +40,8 @@
   author   = {Sharma, Taveesh and Chavula, Josiah},
   abstract = {Community networks have been proposed by many networking experts and researchers as a way to bridge the connectivity gaps in rural and remote areas of the world. Many community networks are built with low-capacity computing devices and low-capacity links. Such community networks are examples of low resource networks. The design and implementation of computer networks using limited hardware and software resources has been studied extensively in the past, but scheduling strategies for conducting measurements on these networks remains an important area to be explored. In this study, the design of a Quality of Service monitoring system is proposed, focusing on performance of scheduling of network measurement jobs in different topologies of a low-resource network. Our results show that a graph colouring algorithm (AOSD) that arranges network measurement jobs in ascending order of their number of conflicts performs better than other scheduling algorithms like Round Robin (RR) and Earliest Deadline First (EDF).},
   year     = {2021},
+  slides   = {SATNAC_Slides.pdf},
+  code     = {https://github.com/staveesh/qosmon-request-handler}, 
   pdf      = {SATNAC.pdf}
 }
 @article{mbewe2022powerqope,
@@ -49,6 +53,7 @@
   year      = {2022},
   publisher = {Springer},
   pdf       = {haisa2022.pdf},
+  code = {https://github.com/staveesh/PowerQoPE},
   selected  = {true}
 }
 @inproceedings{SAICSIT2022:Investigating_Usability_and_Quality,
@@ -78,5 +83,7 @@
   year     = {2023},
   pdf      = {TPRC_2023.pdf},
   selected = {true},
+  slides = {TPRC_Slides.pdf},
+  talk = {https://youtu.be/f6QsST1_QXE?list=PLIB8En8N9ws2Dx4XDxbKnBXF6lWaxEoiG&t=1926},
   abstract = {Measuring Internet access network performance has been a persistent challenge for researchers and policymakers alike. Unfortunately, existing speed test datasets typically lack comprehensive data across both space and time. Specifically, our past work has highlighted that tools like Ookla's Speed Test and Measurement Lab's NDT rely heavily on convenience samples (user-initiated tests from self-selected participants), resulting in a sample that may not generalize across either time or geography. Our ongoing research seeks to address these issues by developing innovative sampling methods and statistical models to provide a more holistic view of Inter- net performance. Initial findings, focusing on end-to-end latency across hyper-local regions within a single large city in the United States (Chicago, Illinois), reveal that spatial proximity often does not correlate with simultaneous performance anomalies. These insights underscore the need for advanced methods to generalize Internet performance data across time and space. Improved methods can ultimately en- able a better understanding of the effects of infrastructure investments on the evolution of Internet performance.}
 }
