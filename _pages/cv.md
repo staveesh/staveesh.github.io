@@ -1,6 +1,6 @@
 ---
 layout: cv
-permalink: /cv/
+permalink: /assets/pdf/Taveesh_CV.pdf
 title: CV
 nav: true
 nav_order: 4
