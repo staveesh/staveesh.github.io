@@ -9,7 +9,7 @@ profile:
   image: profile.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>taveesh@uchicago.edu</p>
+    <p>Email: taveesh@uchicago.edu</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
