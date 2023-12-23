@@ -4,7 +4,6 @@ title: DenseNet API
 description: A simple Artificial Neural Network API for Supervised Learning using Python.
 img: /assets/img/densenet.png
 importance: 4
-category: School
 ---
 
 Github : [https://github.com/staveesh/DenseNet-API](https://github.com/staveesh/DenseNet-API)

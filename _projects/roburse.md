@@ -4,7 +4,6 @@ title: Roburse
 description: A medical assistant for the sick and elderly.
 img: /assets/img/roburse1.jpeg
 importance: 2
-category: School
 ---
 
 <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/roburse2.jpeg' | relative_url }}" alt="" title="Roburse in action"/>

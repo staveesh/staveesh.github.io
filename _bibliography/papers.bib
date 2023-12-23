@@ -1,10 +1,20 @@
-@misc{2306.01194,
-  abbr     = {IMC},
-  author   = {Taveesh Sharma and Tarun Mangla and Arpit Gupta and Junchen Jiang and Nick Feamster},
-  abstract = { The increased use of video conferencing applications (VCAs) has made it critical to understand and support end-user quality of experience (QoE) by all stakeholders in the VCA ecosystem, especially network operators, who typically do not have direct access to client software. Existing VCA QoE estimation methods use passive measurements of application-level Real-time Transport Protocol (RTP) headers. However, a network operator does not always have access to RTP headers in all cases, particularly when VCAs use custom RTP protocols (e.g., Zoom) or due to system constraints (e.g., legacy measurement systems). Given this challenge, this paper considers the use of more standard features in the network traffic, namely, IP and UDP headers, to provide per-second estimates of key VCA QoE metrics such as frames rate and video resolution. We develop a method that uses machine learning with a combination of flow statistics (e.g., throughput) and features derived based on the mechanisms used by the VCAs to fragment video frames into packets. We evaluate our method for three prevalent VCAs running over WebRTC: Google Meet, Microsoft Teams, and Cisco Webex. Our evaluation consists of 54,696 seconds of VCA data collected from both (1), controlled in-lab network conditions, and (2) real-world networks from 15 households. We show that the ML-based approach yields similar accuracy compared to the RTP-based methods, despite using only IP/UDP data. For instance, we can estimate FPS within 2 FPS for up to 83.05\% of one-second intervals in the real-world data, which is only 1.76\% lower than using the application-level RTP headers.},
-  title    = {Estimating WebRTC Video QoE Metrics Without Using Application Headers },
-  year     = {2023},
-  eprint   = {arXiv:2306.01194},
+@inproceedings{10.1145/3618257.3624828,
+  abbr = {IMC},
+  author = {Sharma, Taveesh and Mangla, Tarun and Gupta, Arpit and Jiang, Junchen and Feamster, Nick},
+  title = {Estimating WebRTC Video QoE Metrics Without Using Application Headers},
+  year = {2023},
+  isbn = {9798400703829},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3618257.3624828},
+  doi = {10.1145/3618257.3624828},
+  abstract = {The increased use of video conferencing applications (VCAs) has made it critical to understand and support end-user quality of experience (QoE) by all stakeholders in the VCA ecosystem, especially network operators, who typically do not have direct access to client software. Existing VCA QoE estimation methods use passive measurements of application-level Real-time Transport Protocol (RTP) headers. However, a network operator does not always have access to RTP headers in all cases, particularly when VCAs use custom RTP protocols (e.g., Zoom) or due to system constraints (e.g., legacy measurement systems). Given this challenge, this paper considers the use of more standard features in the network traffic, namely, IP and UDP headers, to provide per-second estimates of key VCA QoE metrics such as frames rate and video resolution. We develop a method that uses machine learning with a combination of flow statistics (e.g., throughput) and features derived based on the mechanisms used by the VCAs to fragment video frames into packets. We evaluate our method for three prevalent VCAs running over WebRTC: Google Meet, Microsoft Teams, and Cisco Webex. Our evaluation consists of 54,696 seconds of VCA data collected from both (1), controlled in-lab network conditions, and (2) real-world networks from 15 households. We show that the ML-based approach yields similar accuracy compared to the RTP-based methods, despite using only IP/UDP data. For instance, we can estimate FPS within 2 FPS for up to 83.05\% of one-second intervals in the real-world data, which is only 1.76\% lower than using the application-level RTP headers.},
+  booktitle = {Proceedings of the 2023 ACM Internet Measurement Conference},
+  pages = {485–500},
+  numpages = {16},
+  keywords = {access networks, machine learning, quality of experience, video conferencing},
+  location = {<conf-loc>, <city>Montreal QC</city>, <country>Canada</country>, </conf-loc>},
+  series = {IMC '23},
   pdf      = {IMC_2023.pdf},
   code     = {https://github.com/noise-lab/vcaml},
   selected = {true},
@@ -12,7 +22,7 @@
   talk      = {https://drive.google.com/file/d/1mOnfPNV62tsCBCd3SRn9fyyK1JpzwfkT/view?usp=drivesdk}
 }
 
-@article{taveesh2021investigating,
+@inproceedings{taveesh2021investigating,
   abbr      = {COMPASS},
   author    = {Sharma, Taveesh and Chavula, Josiah},
   title     = {Investigating Measurement Scheduling Strategies in Low Resource Networks (Poster)},
@@ -36,7 +46,7 @@
   pdf       = {3460112.3472310.pdf},
 }
 
-@article{sharma2021topology,
+@inproceedings{sharma2021topology,
   abbr     = {SATNAC},
   title    = {Topology-Aware Measurement Scheduling Strategies in Low Resource Networks},
   author   = {Sharma, Taveesh and Chavula, Josiah},
@@ -44,9 +54,10 @@
   year     = {2021},
   slides   = {SATNAC_Slides.pdf},
   code     = {https://github.com/staveesh/qosmon-request-handler}, 
+  booktitle = {Proceedings of the Southern African Telecommunication Networks and Applications Conference (SATNAC)},
   pdf      = {SATNAC.pdf}
 }
-@article{mbewe2022powerqope,
+@inproceedings{mbewe2022powerqope,
   abbr      = {HAISA},
   booktitle = {Proceedings of IFIP International Symposium on Human Aspects of Information Security \& Assurance (HAISA 2022), 6-7 July 2022, Mytilene, (Greece)},
   abstract  = {Security configuration remains obscure for many Internet users, especially those with limited computing skills. This obscurity exposes such users to various Internet attacks. Recently, there has been an increase in cyberattacks targeted at individuals due to the remote workforce imposed by the COVID 19 pandemic. These attacks have exposed the inefficiencies of the non-human-centric implementation of Internet security mechanisms and protocols. Security research usually positions users as the weakest link in the security ecosystem, making system and protocol developers exclude the users in the development process. This stereotypical approach has negatively affected users’ security uptake. Mostly, security systems are not comprehensible for an average user, negatively affecting performance and Quality of Experience. This causes the users to shun using security mechanisms. Building on human-centric cybersecurity research, we present a tool that aids in configuring Internet Quality of protection and Experience (referred to as PowerQoPE in this paper). We describe its architecture and design methodology and finally present evaluation results. Preliminary evaluation results show that user-centric and data-driven approaches in the design of Internet security systems improve users’ Quality of Experience. The controlled experiment results show that users are not really stupid; they know what they want and that given proper security configuration platforms with proper framing of components and information, they can make optimal security decisions.},

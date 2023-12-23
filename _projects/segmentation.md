@@ -1,10 +1,9 @@
 ---
 layout: page
 title: RBC Segmentation
-description: Semantic Segmentation on Variable Sized Images of Red Blood Cells using Deconvolution Network
+description: Semantic Segmentation on Variable Sized Images of Red Blood Cells using Deconvolution Networks
 img: /assets/img/deconv.png
 importance: 3
-category: School
 ---
 
 <div class="row justify-content-sm-center">
