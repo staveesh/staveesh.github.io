@@ -1,4 +1,5 @@
 @misc{sharma2024spatial,
+      abbr = {Pre-print},
       title={Spatial Models for Crowdsourced Internet Access Network Performance Measurements}, 
       author={Taveesh Sharma and Paul Schmitt and Francesco Bronzino and Nick Feamster and Nicole Marwell},
       year={2024},
@@ -6,6 +7,7 @@
       archivePrefix={arXiv},
       primaryClass={cs.NI},
       selected = {true},
+      pdf = {preprint_2024.pdf},
       abstract = {Despite significant investments in access network infrastructure, universal access to high-quality Internet connectivity remains a challenge. Policymakers often rely on large-scale, crowdsourced measurement datasets to assess the distribution of access network performance across geographic areas. These decisions typically rest on the assumption that Internet performance is uniformly distributed within predefined social boundaries, such as zip codes, census tracts, or community areas. However, this assumption may not be valid for two reasons: (1) crowdsourced measurements often exhibit non-uniform sampling densities within geographic areas; and (2) predefined social boundaries may not align with the actual boundaries of Internet infrastructure. In this paper, we model Internet performance as a spatial process. We apply and evaluate a series of statistical techniques to: (1) aggregate Internet performance over a geographic region; (2) overlay interpolated maps with various sampling boundary choices; and (3) spatially cluster boundary units to identify areas with similar performance characteristics. We evaluated the effectiveness of these using a 17-month-long crowdsourced dataset from Ookla Speedtest. We evaluate several leading interpolation methods at varying spatial scales. Further, we examine the similarity between the resulting boundaries for smaller realizations of the dataset. Our findings suggest that our combination of techniques achieves a 56% gain in similarity score over traditional methods that rely on aggregates over raw measurement values for performance summarization. Our work highlights an urgent need for more sophisticated strategies in understanding and addressing Internet access disparities.}
 }
 
@@ -21,7 +23,7 @@
   doi = {10.1145/3618257.3624828},
   abstract = {The increased use of video conferencing applications (VCAs) has made it critical to understand and support end-user quality of experience (QoE) by all stakeholders in the VCA ecosystem, especially network operators, who typically do not have direct access to client software. Existing VCA QoE estimation methods use passive measurements of application-level Real-time Transport Protocol (RTP) headers. However, a network operator does not always have access to RTP headers in all cases, particularly when VCAs use custom RTP protocols (e.g., Zoom) or due to system constraints (e.g., legacy measurement systems). Given this challenge, this paper considers the use of more standard features in the network traffic, namely, IP and UDP headers, to provide per-second estimates of key VCA QoE metrics such as frames rate and video resolution. We develop a method that uses machine learning with a combination of flow statistics (e.g., throughput) and features derived based on the mechanisms used by the VCAs to fragment video frames into packets. We evaluate our method for three prevalent VCAs running over WebRTC: Google Meet, Microsoft Teams, and Cisco Webex. Our evaluation consists of 54,696 seconds of VCA data collected from both (1), controlled in-lab network conditions, and (2) real-world networks from 15 households. We show that the ML-based approach yields similar accuracy compared to the RTP-based methods, despite using only IP/UDP data. For instance, we can estimate FPS within 2 FPS for up to 83.05\% of one-second intervals in the real-world data, which is only 1.76\% lower than using the application-level RTP headers.},
   booktitle = {Proceedings of the 2023 ACM Internet Measurement Conference},
-  pages = {485–500},
+  pages = {485-500},
   numpages = {16},
   keywords = {access networks, machine learning, quality of experience, video conferencing},
   location = {<conf-loc>, <city>Montreal QC</city>, <country>Canada</country>, </conf-loc>},
