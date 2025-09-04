@@ -6,18 +6,18 @@ subtitle: PhD Student
 
 profile:
   align: right
-  image: profile.jpg
+  image: picture.jpg
   image_circular: false # crops the image to make it circular
-  address: >
-    <p>Email: taveesh@uchicago.edu</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I am a third year PhD student at the University of Chicago. I am interested in working on Internet measurements and security. As a member of the Network Operations and Internet Security (NOISE) lab, I am advised by [Prof. Nick Feamster](https://people.cs.uchicago.edu/~feamster/). Previously, I was at the [University of Cape Town](https://uct.ac.za/) for my masters, where I worked with [Dr. Josiah Chavula](https://www.josiahchavula.com/). I completed my undergraduate studies at [BITS Goa](https://www.bits-pilani.ac.in/goa/).
+As a fourth year PhD student at the University of Chicago, I am currently working on Internet measurements, operations and observability. I am a member of the Network Operations and Internet Security (NOISE) lab, where I am advised by [Prof. Nick Feamster](https://people.cs.uchicago.edu/~feamster/). My PhD research aims to understand the spatial and temporal nature of Internet quality disparities through cross-sectional measurement data. Until the third year, my work explored this problem space through a socio-technical lens. More recently, the focus of my research has shifted towards understanding the co-occurrence between Internet performance disruptions across ISPs and regions. The remaining duration of my PhD will be dedicated towards understanding how we can leverage insights from these co-occurrence patterns to determine *where* and *when* to measure Internet performance.
 
-My research aims to understand the spatial and temporal nature of Internet access disparities through cross-sectional measurement data. Over the course of my PhD, I seek to build *flawless* Internet access maps for effective data-driven policymaking.
+I also bring industry experience to my research. I spent a summer as a Research Intern at [Cisco ThousandEyes](https://https://www.thousandeyes.com/), where I worked on building event detection pipelines for residential broadband performance. Earlier in my career, I was a Software Engineer in the Finance Technology sector—first at [PayPal](https://paypal.com), where I built systems to evaluate fraud detection models, and then at [ePayLater](https://epaylater.in), where I developed product features for a “buy now, pay later” service.
 
-In a past life, I was a software engineer in the Finance Technology industry. I worked for over a year in the Global Data Science team at [PayPal, Inc.](https://www.paypal.com), which was followed by a brief stint in a product development team at [ePayLater](https://www.epaylater.in).
+Before starting my PhD, I was at the [University of Cape Town](https://uct.ac.za/) for my masters, where I had the privilege of working with [Dr. Josiah Chavula](https://www.josiahchavula.com/) on developing measurement data collection systems for resource-constrained environments. I completed my undergraduate studies at [BITS Goa](https://www.bits-pilani.ac.in/goa/).
+
+**I am always on the lookout for summer internships and research collaboration opportunities in data science, Internet measurement, and related areas. Please feel free to reach out to me via [email](mailto:taveesh@uchicago.edu) or [LinkedIn](https://www.linkedin.com/in/taveesh-sharma/) if you would like to connect!**
