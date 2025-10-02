@@ -20,4 +20,4 @@ I also bring industry experience to my research. I spent a summer as a Research 
 
 Before starting my PhD, I was at the [University of Cape Town](https://uct.ac.za/) for my masters, where I had the privilege of working with [Dr. Josiah Chavula](https://www.josiahchavula.com/) on developing measurement data collection systems for resource-constrained environments. I completed my undergraduate studies at [BITS Goa](https://www.bits-pilani.ac.in/goa/).
 
-**I am always on the lookout for summer internships and research collaboration opportunities in data science, Internet measurement, and related areas. Please feel free to reach out to me via [email](mailto:taveesh@uchicago.edu) or [LinkedIn](https://www.linkedin.com/in/taveesh-sharma/) if you would like to connect!**
+**I am actively looking for full time industry positions in Internet measurement, data science, and related areas. Please feel free to reach out to me via [email](mailto:taveesh@uchicago.edu) or [LinkedIn](https://www.linkedin.com/in/taveesh-sharma/) if you would like to connect!**
