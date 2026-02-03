@@ -2,7 +2,7 @@
   author     = {Sharma, Taveesh and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick and Marwell, Nicole P.},
   title      = {Beyond Data Points: Regionalizing Crowdsourced Latency Measurements},
   abbr       = {SIGMETRICS},
-  year       = {2024},
+  year       = {2025},
   issue_date = {December 2024},
   publisher  = {Association for Computing Machinery},
   address    = {New York, NY, USA},
@@ -121,4 +121,24 @@
   slides   = {TPRC_Slides.pdf},
   talk     = {https://youtu.be/f6QsST1_QXE?list=PLIB8En8N9ws2Dx4XDxbKnBXF6lWaxEoiG&t=1926},
   abstract = {Measuring Internet access network performance has been a persistent challenge for researchers and policymakers alike. Unfortunately, existing speed test datasets typically lack comprehensive data across both space and time. Specifically, our past work has highlighted that tools like Ookla's Speed Test and Measurement Lab's NDT rely heavily on convenience samples (user-initiated tests from self-selected participants), resulting in a sample that may not generalize across either time or geography. Our ongoing research seeks to address these issues by developing innovative sampling methods and statistical models to provide a more holistic view of Inter- net performance. Initial findings, focusing on end-to-end latency across hyper-local regions within a single large city in the United States (Chicago, Illinois), reveal that spatial proximity often does not correlate with simultaneous performance anomalies. These insights underscore the need for advanced methods to generalize Internet performance data across time and space. Improved methods can ultimately en- able a better understanding of the effects of infrastructure investments on the evolution of Internet performance.}
+}
+@article{ray2025characterizing,
+  abbr={arXiv},   
+  title={Characterizing the Impact of Active Queue Management on Speed Test Measurements},
+  author={Ray, Siddhant and Sharma, Taveesh and Marques, Jonatas and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick},
+  abstract={Present day speed test tools measure peak throughput, but often fail to capture the user-perceived responsiveness of a network connection under load. Recently, platforms such as NDT, Ookla Speedtest and Cloudflare Speed Test have introduced metrics such as “latency under load” or “working latency” to fill this gap. Yet, the sensitivity of these metrics to basic network configurations such as Active Queue Management (AQM) remains poorly understood. In this work, we conduct an empirical study of the impact of AQM on speed test measurements in a laboratory setting. Using controlled experiments, we compare the distribution of throughput and latency under different load measurements across different AQM schemes, including CoDel, FQ-CoDel and Stochastic Fair Queuing (SFQ). On comparing with a standard droptail baseline, we find that measurements have high variance across AQM schemes and load conditions. These results highlight the critical role of AQM in shaping how emerging latency metrics should be interpreted, and underscore the need for careful calibration of speed test platforms before their results are used to guide policy or regulatory outcomes.},
+  journal={arXiv preprint arXiv:2511.19213},
+  year={2025},
+  pdf={AQM_Paper.pdf}
+}
+
+@article{sharma2026less,
+  abbr={arXiv},
+  title={Less is More: Optimizing Probe Selection Using Shared Latency Anomalies},
+  author={Sharma, Taveesh and Chu, Andrew and Schmitt, Paul and Bronzino, Francesco and Feamster, Nick and Marwell, Nicole P.},
+  abstract={Latency anomalies—persistent or transient increases in round-trip time (RTT)—are a common feature of residential Internet performance. When multiple users simultaneously experience anomalies at the same destination, it may indicate shared infrastructure issues, routing behavior, or congestion. However, inferring such shared behavior is challenging in practice. This is because the magnitude of these anomalies can vary significantly across devices, even within the same ISP and geographic area, and detailed network topology information is often unavailable due to platform limitations or privacy constraints.
+  In this work, we study whether devices that experience a shared latency anomaly observe similar changes in RTT magnitude using a topology-agnostic approach. Using a four-month dataset of high-frequency RTT measurements from 99 residential probes in Chicago, we detect shared anomalies and analyze their consistency in amplitude and duration without relying on traceroutes or explicit path information. Building on prior change-point detection techniques, we find that many shared anomalies affect users similarly in amplitude, particularly within the same ISP. Leveraging this insight, we develop a sampling algorithm that reduces redundancy in detected anomalies by selecting representative devices under user-defined constraints. Our approach covers 95% of aggregate anomaly impact with less than half the total probes used in our deployment. Compared to two baselines, we show that our approach selects a significantly higher number of unique anomalies at similar coverage levels. Additionally, our analysis suggests that geographic diversity can play an important role in selecting probes for a single ISP even within a single city. These findings highlight the potential of using anomaly amplitude and duration as topology-independent signals for scalable monitoring, troubleshooting, and cost-effective sampling designs in residential Internet performance measurement.},
+  year={2026},
+  selected={true},
+  pdf={Probe_Reduction.pdf}
 }
