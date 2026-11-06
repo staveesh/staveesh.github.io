@@ -10,6 +10,7 @@
   number     = {3},
   url        = {https://doi.org/10.1145/3700416},
   doi        = {10.1145/3700416},
+  dimensions        = {true},
   abstract   = {Despite significant investments in access network infrastructure, universal access to high-quality Internet connectivity remains a challenge. Policymakers often rely on large-scale, crowdsourced measurement datasets to assess the distribution of access network performance across geographic areas. These decisions typically rest on the assumption that Internet performance is uniformly distributed within predefined social boundaries, such as zip codes, census tracts, or neighborhood units. However, this assumption may not be valid for two reasons: (1) crowdsourced measurements often exhibit non-uniform sampling densities within geographic areas; and (2) predefined social boundaries may not align with the actual boundaries of Internet infrastructure. In this paper, we present a spatial analysis on crowdsourced datasets for constructing stable boundaries for sampling Internet performance. We hypothesize that greater stability in sampling boundaries will reflect the true nature of Internet performance disparities than misleading patterns observed as a result of data sampling variations. We apply and evaluate a series of statistical techniques to: (1) aggregate Internet performance over geographic regions; (2) overlay interpolated maps with various sampling unit choices; and (3) spatially cluster boundary units to identify contiguous areas with similar performance characteristics. We assess the effectiveness of the techniques we apply by comparing the similarity of the resulting boundaries for monthly samples drawn from the dataset. Our evaluation shows that the combination of techniques we apply achieves higher similarity compared to directly calculating central measures of network metrics over census tracts or neighborhood boundaries. These findings underscore the important role of spatial modeling in accurately assessing and optimizing the distribution of Internet performance, which can better inform policy, network operations, and long-term planning decisions.},
   journal    = {Proc. ACM Meas. Anal. Comput. Syst.},
   month      = dec,
@@ -32,12 +33,13 @@
   address   = {New York, NY, USA},
   url       = {https://doi.org/10.1145/3618257.3624828},
   doi       = {10.1145/3618257.3624828},
+  dimensions       = {true},
   abstract  = {The increased use of video conferencing applications (VCAs) has made it critical to understand and support end-user quality of experience (QoE) by all stakeholders in the VCA ecosystem, especially network operators, who typically do not have direct access to client software. Existing VCA QoE estimation methods use passive measurements of application-level Real-time Transport Protocol (RTP) headers. However, a network operator does not always have access to RTP headers in all cases, particularly when VCAs use custom RTP protocols (e.g., Zoom) or due to system constraints (e.g., legacy measurement systems). Given this challenge, this paper considers the use of more standard features in the network traffic, namely, IP and UDP headers, to provide per-second estimates of key VCA QoE metrics such as frames rate and video resolution. We develop a method that uses machine learning with a combination of flow statistics (e.g., throughput) and features derived based on the mechanisms used by the VCAs to fragment video frames into packets. We evaluate our method for three prevalent VCAs running over WebRTC: Google Meet, Microsoft Teams, and Cisco Webex. Our evaluation consists of 54,696 seconds of VCA data collected from both (1), controlled in-lab network conditions, and (2) real-world networks from 15 households. We show that the ML-based approach yields similar accuracy compared to the RTP-based methods, despite using only IP/UDP data. For instance, we can estimate FPS within 2 FPS for up to 83.05\% of one-second intervals in the real-world data, which is only 1.76\% lower than using the application-level RTP headers.},
   booktitle = {Proceedings of the 2023 ACM Internet Measurement Conference},
   pages     = {485-500},
   numpages  = {16},
   keywords  = {access networks, machine learning, quality of experience, video conferencing},
-  location  = {<conf-loc>, <city>Montreal QC</city>, <country>Canada</country>, </conf-loc>},
+  location  = {Montreal QC, Canada},
   series    = {IMC '23},
   pdf       = {IMC_2023.pdf},
   code      = {https://github.com/noise-lab/vcaml},
@@ -53,6 +55,7 @@
   booktitle = {ACM SIGCAS Conference on Computing and Sustainable Societies (COMPASS)},
   year      = {2020},
   doi       = {10.1145/3460112.3472310},
+  dimensions       = {true},
   abstract  = { Community networks have been proposed by many networking experts and researchers
                as a way to bridge connectivity gaps in rural and remote areas of the world. Many
                community networks are built with low-capacity computing devices and low-capacity
@@ -108,6 +111,7 @@
   issn      = {2398-7340},
   url       = {https://easychair.org/publications/paper/bchj7},
   doi       = {10.29007/wwft},
+  dimensions       = {true},
   pdf       = {saicsit2022.pdf}
 }
 @article{sharma2023firstlook,

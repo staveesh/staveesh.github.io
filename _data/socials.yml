@@ -1,0 +1,10 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+email: taveesh@uchicago.edu # your email address
+scholar_userid: lkw1A3oAAAAJ # your Google Scholar ID
+github_username: staveesh # your GitHub user name
+linkedin_username: taveesh-sharma # your LinkedIn user name
+x_username: staveesh # your X (formerly Twitter) handle
+instagram_id: _taveesh # your instagram id
+facebook_id: taveeshsharma # your facebook id

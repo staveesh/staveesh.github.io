@@ -9,10 +9,16 @@ profile:
   image: picture.jpg
   image_circular: false # crops the image to make it circular
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 7 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
 ---
 
 I am a fourth-year PhD student at the [University of Chicago](https://www.uchicago.edu/), focusing on Internet measurement, operations, and observability. I am a member of the [Network Operations and Internet Security (NOISE)](https://noise.cs.uchicago.edu/) Lab, advised by [Prof. Nick Feamster](https://people.cs.uchicago.edu/~feamster/). My research investigates the spatial and temporal dynamics of Internet quality disparities using cross-sectional measurement data.
